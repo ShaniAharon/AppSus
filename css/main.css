@@ -1,0 +1,68 @@
+@import url('./Apps/keep/keep-main.css');
+@import url('./Apps/mail/mail.css');
+@import url('./Apps/books/miss-books.css');
+
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/Poppins-Medium.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+
+/* header */
+.app-header, .app-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color: white;
+  background-color: lightcoral;
+}
+.app-header a{
+  color: black;
+  text-decoration: none;
+}
+a.router-link-exact-active.router-link-active{
+  color: white;
+  text-decoration: initial;
+}
+
+/* home page  */
+
+.home-page {
+  text-align: center;
+  height: 80vh;
+  background-image: url(../img/landing3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-attachment: fixed; */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home-page h1{
+  font-size: xx-large;
+  margin: 0;
+  color: lightcoral;
+  background-color: #faebd787;
+}
+.home-page p{
+  font-size: x-large;
+  color: lightcoral;
+  background-color: #faebd787;
+  margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .home-page{
+    background-size: cover;
+  } 
+}
